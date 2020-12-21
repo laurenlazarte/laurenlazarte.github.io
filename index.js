@@ -1,43 +1,43 @@
-function showabout(){
-    $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInLeft");
+function showhappy(){
+    $("#happy_container").css("display","inherit");
+    $("#happy_container").addClass("animated slideInLeft");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideInLeft");
+        $("#happy_container").removeClass("animated slideInLeft");
     },800);
 }
-function closeabout(){
-    $("#about_container").addClass("animated slideOutLeft");
+function closehappy(){
+    $("#happy_container").addClass("animated slideOutLeft");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutLeft");
-        $("#about_container").css("display","none");
+        $("#happy_container").removeClass("animated slideOutLeft");
+        $("#happy_container").css("display","none");
     },800);
 }
-function showwork(){
-    $("#work_container").css("display","inherit");
-    $("#work_container").addClass("animated slideInRight");
+function showsad(){
+    $("#sad_container").css("display","inherit");
+    $("#sad_container").addClass("animated slideInRight");
     setTimeout(function(){
-        $("#work_container").removeClass("animated slideInRight");
+        $("#sad_container").removeClass("animated slideInRight");
     },800);
 }
-function closework(){
-    $("#work_container").addClass("animated slideOutRight");
+function closesad(){
+    $("#sad_container").addClass("animated slideOutRight");
     setTimeout(function(){
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display","none");
+        $("#sad_container").removeClass("animated slideOutRight");
+        $("#sad_container").css("display","none");
     },800);
 }
-function showcontact(){
-    $("#contact_container").css("display","inherit");
-    $("#contact_container").addClass("animated slideInUp");
+function showmad(){
+    $("#mad_container").css("display","inherit");
+    $("#mad_container").addClass("animated slideInUp");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideInUp");
+        $("#mad_container").removeClass("animated slideInUp");
     },800);
 }
-function closecontact(){
-    $("#contact_container").addClass("animated slideOutDown");
+function closemad(){
+    $("#mad_container").addClass("animated slideOutDown");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display","none");
+        $("#mad_container").removeClass("animated slideOutDown");
+        $("#mad_container").css("display","none");
     },800);
 }
 setTimeout(function(){
@@ -46,8 +46,8 @@ setTimeout(function(){
       $("#loading").removeClass("animated fadeOut");
       $("#loading").css("display","none");
       $("#box").css("display","none");
-      $("#about").removeClass("animated fadeIn");
-      $("#contact").removeClass("animated fadeIn");
-      $("#work").removeClass("animated fadeIn");
+      $("#happy").removeClass("animated fadeIn");
+      $("#mad").removeClass("animated fadeIn");
+      $("#sad").removeClass("animated fadeIn");
     },1000);
 },1500);
